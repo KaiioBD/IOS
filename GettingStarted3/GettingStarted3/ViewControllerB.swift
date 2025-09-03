@@ -1,0 +1,18 @@
+//
+//  ViewControllerB.swift
+//  GettingStarted3
+//
+//  Created by Facultad de Contaduría y Administración on 03/09/25.
+//
+
+import Foundation
+import UIKit
+
+class ViewControllerB: UIViewController {
+    
+    @IBAction func didTapVC(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let vc = storyboard.instantiateViewController(identifier: "vc3")
+        navigationController?.pushViewController(vc, animated: true)
+    }
+}
